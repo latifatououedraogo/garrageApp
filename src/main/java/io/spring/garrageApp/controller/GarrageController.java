@@ -15,6 +15,11 @@ public class GarrageController {
 
     private GarrageService  garrageService;
 
+    @GetMapping("/")
+    public String hello(){
+        return "hello!!!!!!!";
+    }
+
     @RequestMapping("/cars")
     public List<Car> getCard(){
 
